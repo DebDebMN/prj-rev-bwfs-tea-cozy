@@ -1,0 +1,217 @@
+<html>
+<head>
+  <!--  This is the html file for Codecademy's Unit 4 Tea Cozy project: index.html.
+        Subpage not needed.
+  -->
+  <title>Tea Cozy</title>
+  <link href="./resources/css/style.css" type="text/css" rel="stylesheet">
+</head>
+<body>
+
+<!--  This project consists of the following major containers:
+      - HEADER:    logo and navigation that points to sections below
+      - MISSION:   mission of company
+      - TEA-OTM:   tea of the month (tea-otm) with pictures
+      - LOCALS:    highlights to three locations within Portland, Maine
+      - FOOTER:    company name and contact info
+      - COPYRT:    copyright - plain text, not too big
+-->
+
+  <!--
+  *************
+    HEADER
+  *************
+  -->
+  <div class="header-container">
+
+    <div class="header-logo">
+        <img src="./resources/images/img-tea-cozy-logo.png" height="50"/>
+    </div>
+
+
+    <!-- navigation part. -->
+    <div class="header-nav-container">
+      <div class="header-items">
+        <span>
+        <ul class="headerlist">
+          <li class="nav-item-box">
+            <a href="#MISSION">Mission</a>
+          </li>
+          <li class="nav-item-box">
+            <a href="#TEA-OTM">Featured Tea</a>
+          </li>
+          <li class="nav-item-box">
+            <a href="#LOCALS">Locations</a>
+          </li>
+        </ul>
+        </span>
+      </div> <!-- for header-items -->
+    </div> <!-- for header-nav-container -->
+  </div> <!-- for header-container -->
+
+  <div class="main-container">
+
+    <!--
+    *************
+      MISSION
+    *************
+    - Note that the specification calls for an image height of 700px.  This is
+      specified in teh img src statement.
+    -->
+    <div class="mission-container" id="MISSION">
+
+      <div class="mission-text-container">
+        <div class="mission-text">
+          <h2>Our Mission</h2>
+          <h4>Handpicked, Artisanally Curated, Free Range, Sustainable, Small Batch, Fair Trade, Organic Tea</h4>
+        </div>
+      </div>
+    </div> <!-- for mission-container -->
+
+    <!--
+    ****************
+        TEA-OTM
+    ****************
+    - Note that this secion has a header text, followed by pictures of each
+      of the teas with identifying text associated with each picture.  The
+      size of the team images are noted in the specification and are used here.
+    -->
+    <div class="tea-otm-container" id="TEA-OTM">
+      <div class="tea-otm-header-text">
+        <h2>Tea of the Month</h2>
+        <h4>What's Steeping at The Tea Cozy?</h4>
+      </div>
+
+      <div class="tea-otm-picture-container">
+
+        <div class="berryblitz-tea-container">
+          <div class="tea-image">
+            <img src="./resources/images/img-berryblitz.jpg"/>
+          </div>
+            <div class="tea-text">
+              <h4>Fall Berry Blitz Tea</h4>
+          </div>
+        </div>
+
+        <div class="spiced-rum-tea-container">
+          <div class="tea-image">
+            <img src="./resources/images/img-spiced-rum.jpg"/>
+          </div>
+          <div class="tea-text">
+            <h4>Spiced Rum Tea</h4>
+          </div>
+        </div>
+
+        <div class="donuts-tea-container">
+          <div class="tea-image">
+            <img src="./resources/images/img-donut.jpg"/>
+          </div>
+          <div class="tea-text">
+            <h4>Seasonal Donuts</h4>
+          </div>
+        </div>
+
+        <div class="myrtle-ave-tea-container">
+          <div class="tea-image">
+            <img src="./resources/images/img-myrtle-ave.jpg"/>
+          </div>
+          <div class="tea-text">
+            <h4>Myrtle Ave Tea</h4>
+          </div>
+        </div>
+
+        <div class="bedford-bizarre-tea-container">
+          <div class="tea-image">
+            <img src="./resources/images/img-bedford-bizarre.jpg"/>
+          </div>
+          <div class="tea-text">
+            <h4>Bedford Bizarre Tea</h4>
+          </div>
+        </div>
+
+      </div> <!-- for tea-otm-picture-container -->
+    </div> <!-- for tea-otm-container -->
+
+
+    <!--
+    ****************
+         LOCALS
+    ****************
+    - Note that this secion has a header text, followed by boxes in a row
+      containing three different locations.  All of that is on top of a
+      background image.
+    -->
+    <div class="locals-container" id="LOCALS">
+
+      <div class="locations-header">
+        <h2>Locations</h2>
+      </div>
+
+      <div class="locations-boxes">
+
+        <div class="location-box">      <!-- Downtonw -->
+          <div class="location-text">
+            <h3>Downtown</h3>
+            <h4>384 West 4th St</h4>
+            <h4>Suite 108</h4>
+            <h4>Portland, Main</h4>
+          </div>
+        </div>
+
+        <div class="location-box">      <!-- Bayside -->
+          <div class="location-text">
+            <h3>East Bayside</h3>
+            <h4>3433 Phiserman's Avenue</h4>
+            <h4>(Northwest Corner)</h4>
+            <h4>Portland, Main</h4>
+          </div>
+        </div>
+
+        <div class="location-box">      <!-- Oakdale -->
+          <div class="location-text">
+            <h3>Oakdale</h3>
+            <h4>515 Crescent Avenue</h4>
+            <h4>Second Floor</h4>
+            <h4>Portland, Main</h4>
+          </div>
+        </div>
+
+      </div> <!-- for lcations-boxes -->
+    </div> <!-- for locals-container -->
+
+
+    <!--
+    ****************
+         FOOTER
+    ****************
+    - Note that this secion has a company name, followed by contact info.
+    -->
+    <div class="footer-container">
+      <div class="footer-box">
+
+        <div class="footer-text">
+          <h2>The Tea Cozy</h2>
+          <h5>contact&#64theteacozy.com</h5>
+          <h5>917-555-8904</h5>
+        </div>
+      </div>
+    </div> <!-- for footer-container -->
+
+
+    <!--
+    ****************
+         COPYRT
+    ****************
+    - Note that this secion has just one line of text.
+    -->
+    <div class="copyrt-container">
+      <div class="copyrt-box">
+        <div class="copyrt-text">
+          <h5>copyright The Tea Cozy 2017</h5>
+        </div>
+      </div>
+    </div> <!-- for copyrt-container -->
+  </div> <!-- main container -->
+
+</body>
+</html>

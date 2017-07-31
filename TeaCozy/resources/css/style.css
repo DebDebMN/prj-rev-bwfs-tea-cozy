@@ -1,0 +1,238 @@
+/* This is the css file for Codecademy's Unit 4 Tea Cozy project: index.html.  */
+
+/* Style for whole page for font. */
+body {
+  font-family: Helvetica;
+  font-size: 22px;
+  color: seashell;
+  background-color: black;
+  opacity: 0.9;
+  margin: 0;
+}
+
+/* Style navigation links for whole page. */
+a:link,
+a:visited {
+  color: seashell;
+}
+
+/* mouse over link */
+a:hover {
+    color: yellow;
+}
+
+/*  *************************************
+    ********   Syle the HEADER.  ********
+    *************************************
+    There are two parts: logo and navigation.
+    - Note that the header section must remain fixed in the browser window therefore
+      the position is fixed.
+    - Note the specific height set for the container.  This is to ensure that
+      the container is exactly 70px per the spec (as measured in Google Chrome Teveloper Tools).
+*/
+.header-container {
+  display: flex;
+  justify-content: space-between;
+  background-color: black;
+  color: seashell;
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  height: 69px;
+  z-index: 100;
+  border-bottom: 1px solid seashell;
+}
+
+  .header-logo {
+    display: inline-flex;
+    align-items: center;
+    padding-left: 10px;
+  }
+
+  .headerlist li {
+    display: inline-block;
+  }
+  .header-items {
+    padding-right: 10px;
+  }
+
+  .nav-item-box{
+    padding-left: 30px;
+  }
+
+  /*  Note that this container sets up the rest of the rest of the page.
+      It must be relative in order to "slide under" the header.  */
+  .main-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position:relative;
+  }
+
+
+/* *********************************************
+   ********   Style the MISSION area.   ********
+   *********************************************
+
+    There are two parts: the picture and the centered mission text.
+    - Note that the image is positioned relative (and top defined) so that it will
+      meet the fixed position header correctly.
+    - Size of the image, box, font and centering were specified in the spec.
+*/
+.mission-container {
+  display: flex;
+  top: 70px;
+  flex-direction: column;
+  align-items: center;
+}
+
+.mission-text-container {
+  background: url("../images/img-mission-background.jpg");
+  display: flex;
+  min-height: 700px;
+  weight: 1200px;
+  align-items: center;
+}
+
+.mission-text {
+  text-align: center;
+  background-color: black;
+  opacity: 1;
+  width: 1200px;
+}
+
+
+/*  ******************************************************
+    ********   Style the TEA-OF-THE-MONTH area.   ********
+    ******************************************************
+
+    There are two parts to this section:
+      - Header text,
+      - followed by pictures of each of the teas with associated text below
+        each picture.
+*/
+.tea-otm-container{
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  width: 1000px;
+  height: auto;
+  margin-top: 30px;
+  align-items: center;
+}
+
+  .tea-otm-picture-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 20px;
+  }
+
+  .tea-image {
+    display: inline-flex;
+    flex-direction: column;
+    align-items: center;
+    margin-left: 12px;
+    margin-right: 12px;
+  }
+
+  .tea-image img {
+    height: 200px;
+    width: 300px;
+  }
+
+
+/*  ***********************************************
+    ********   Style the LOCATIONS area.   ********
+    ***********************************************
+
+    There are three locations displayed in a row with a background image.
+*/
+
+.locals-container {        /* Set up the elements as a column & centered. */
+
+  width: 1200px;
+  min-height: 520px;  /* This includes the height of the top margin. */
+  margin-top: 20px;
+  background: url("../images/img-locations-background.jpg");
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+  .locations-boxes {   /*  Set up the behaviour of the three location boexes, */
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    min-height: 300px;
+    width: 980px;
+    margin-top: 5px;
+  }
+
+  .location-box {   /* Style each of the location boxes. */
+    display: flex;
+    width: 300px;
+    background-color: black;
+    opacity: 1;
+
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+  }
+
+
+  /*  ***********************************************
+      ********   Style the FOOTER area.   ********
+      ***********************************************
+
+      There are two parts to this section:  the company title, and contact info.
+      This information is displayed in a area no larger than 200 px per the spec.
+  */
+  .footer-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+  }
+
+  .footer-box {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    min-height: 200px;
+  }
+
+  .footer-text {
+    text-align: center;
+  }
+
+  .footer-text h2 {
+    margin-top: 15px;
+  }
+
+
+  /*  ***********************************************
+      ********   Style the FOOTER area.   ********
+      ***********************************************
+
+      There is only one line however it has to be placed is the specified
+      location to the left with 20px margin.
+  */
+  .copyrt-container {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    width: 100%;
+  }
+
+  .copyrt-text {
+    text-align: left;
+    margin-left: 20px;
+  }
