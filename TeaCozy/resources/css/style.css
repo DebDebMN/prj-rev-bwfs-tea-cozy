@@ -177,7 +177,7 @@ a:hover {
     align-items: center;
     max-height: 300px;
     width: 980px;     /* 980 is used to leave 40px between boxes per spec.*/
-    margin-top: 5px;  /* Note that spec states 15px margin between locations-header
+    margin-top: 15px;  /* Note that spec states 15px margin between locations-header
                          and boxes.  This accomplishes that. */
   }
 
