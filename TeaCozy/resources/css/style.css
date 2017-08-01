@@ -156,13 +156,17 @@ a:hover {
 
   width: 1200px;
   min-height: 520px;  /* This includes the height of the top margin. */
-  margin-top: 20px;
+  margin-top: 20px; /* was 20 */
   background: url("../images/img-locations-background.jpg");
 
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+}
+  .locations-header h2{
+     margin: 0px;
+     padding: 0px;
 }
 
   .locations-boxes {   /*  Set up the behaviour of the three location boexes, */
@@ -171,9 +175,10 @@ a:hover {
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    min-height: 300px;
-    width: 980px;
-    margin-top: 5px;
+    max-height: 300px;
+    width: 980px;     /* 980 is used to leave 40px between boxes per spec.*/
+    margin-top: 5px;  /* Note that spec states 15px margin between locations-header
+                         and boxes.  This accomplishes that. */
   }
 
   .location-box {   /* Style each of the location boxes. */
